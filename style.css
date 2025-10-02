@@ -1,0 +1,108 @@
+/* Reset dasar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom right, #ffe0f0, #ffd6f5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Kartu Profil */
+.Kartu-profil {
+  background-color: #fff0f5;
+  border: 4px dashed #ff8ac9;
+  border-radius: 25px;
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.Kartu-profil:hover {
+  transform: scale(1.03);
+}
+
+/* Foto Profil */
+.Kartu-profil img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #ffaad4;
+  box-shadow: 0 0 10px #ffaad4;
+  margin-bottom: 20px;
+}
+
+/* Judul */
+.Kartu-profil h1 {
+  color: #ff5fa2;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+/* Deskripsi */
+.Kartu-profil p {
+  color: #d63384;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Link Instagram */
+.Kartu-profil a {
+  display: inline-block;
+  background-color: #ffaad4;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+}
+
+.Kartu-profil a:hover {
+  background-color: #ff70ba;
+}
+
+/* Tombol Sapa */
+#sapaButton {
+  background-color: #ffc0cb;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 192, 203, 0.4);
+  transition: background-color 0.3s;
+}
+
+#sapaButton:hover {
+  background-color: #ff69b4;
+}
+
+@media screen and (max-width: 480px) {
+  .Kartu-profil {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .Kartu-profil img {
+    width: 120px;
+    height: 120px;
+  }
+
+  #sapaButton, .Kartu-profil a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+
+
+document.getElementById("sapaButton").addEventListener("click", function() {
+  alert("Haii! Terima kasih sudah mengunjungi profil aku 💕✨");
+});
