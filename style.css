@@ -100,9 +100,3 @@ body {
     padding: 8px 12px;
   }
 }
-
-
-
-document.getElementById("sapaButton").addEventListener("click", function() {
-  alert("Haii! Terima kasih sudah mengunjungi profil aku 💕✨");
-});
