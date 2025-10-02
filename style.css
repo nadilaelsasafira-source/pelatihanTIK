@@ -12,14 +12,15 @@ body {
 
 /* Kartu Profil */
 .Kartu-profil {
-  background-color: #fff0f5;
-  border: 4px dashed #ff8ac9;
-  border-radius: 25px;
-  padding: 30px;
-  width: 320px;
-  text-align: center;
-  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
-  transition: transform 0.3s ease;
+  .foto-profil {
+  width: 150px;
+  height: 150px;        /* supaya bentuk kotak tetap */
+  object-fit: cover;     /* agar proporsi tetap baik */
+  border-radius: 50%;    /* agar jadi lingkaran */
+  border: 4px solid #ffaad4;
+  box-shadow: 0 0 10px #ffaad4;
+}
+
 }
 
 .Kartu-profil:hover {
